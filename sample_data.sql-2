@@ -1,0 +1,8 @@
+INSERT INTO Students VALUES (1, 'Tanvi', 19, 'BTech');
+INSERT INTO Students VALUES (2, 'Ravi', 20, 'BTech');
+
+INSERT INTO Courses VALUES (101, 'C Programming', 4);
+INSERT INTO Courses VALUES (102, 'SQL Basics', 3);
+
+INSERT INTO Enrollments VALUES (1001, 1, 101);
+INSERT INTO Enrollments VALUES (1002, 2, 102);

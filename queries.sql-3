@@ -1,0 +1,14 @@
+-- List all students
+SELECT * FROM Students;
+
+-- Show students with their courses
+SELECT s.name, c.course_name
+FROM Enrollments e
+JOIN Students s ON e.student_id = s.student_id
+JOIN Courses c ON e.course_id = c.course_id;
+
+-- Count how many students are enrolled in SQL Basics
+SELECT COUNT(*) 
+FROM Enrollments e
+JOIN Courses c ON e.course_id = c.course_id
+WHERE c.course_name = 'SQL Basics';
